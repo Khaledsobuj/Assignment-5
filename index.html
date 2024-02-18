@@ -192,23 +192,66 @@
                     </div>
                     <!-- set plan -->
                     <div>
-                        <div>
-                            <kbd class="kbd kbd-lg">Shift</kbd>
+                        <div class="flex justify-end">
+                            <kbd class="kbd kbd-lg">Driver</kbd>
                         </div>
 
 
-                        <div class="grid grid-cols-5 gap-4 row-span-1">
-                            <kbd class="kbd kbd-lg">A</kbd>
-                            <kbd class="kbd kbd-lg bg-slate-400">A1</kbd>
-                            <kbd class="kbd kbd-lg bg-slate-400">A2</kbd>
-                            <kbd class="kbd kbd-lg bg-slate-400">A3</kbd>
-                            <kbd class="kbd kbd-lg bg-slate-400">A4</kbd>
+                        <div class="grid grid-cols-5 gap-4 row-span-1 mt-2">
+                            <button>A</button>
+                           
+                            <button id="A1" class="btn set-btn">A1</button>
+                            <button id="A1" class="btn set-btn">A2</button>
+                            <button id="A2" class="btn set-btn">A3</button>
+                            <button id="A3" class="btn set-btn">A4</button>
+
+
+                            <button>B</button>
+
+
+                            <button id="B1" class="btn set-btn">B1</button>
+                            <button id="B2" class="btn set-btn">B2</button>
+                            <button id="B3" class="btn set-btn">B3</button>
+                            <button id="B4" class="btn set-btn">B4</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-yellow-200 w-1/2">
-                    Select Your Seat Price
+                    <div class="bg-slate-100 px-8 pt-5 shadow-lg rounded-xl">
+                        <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
+                        <div class="flex justify-around border-b-2 border-gray-400 border-dashed">
+                            <p class="text-2xl font-extrabold">Seat <span id="seatSlect"
+                                    class="text-green-600 text-3xl">0</span>
+                            </p>
+                            <p class="text-2xl font-extrabold">Class</p>
+                            <p class="text-2xl font-extrabold">Price</p>
+                        </div>
+                        <div class="border-b-2 border-gray-400 border-dashed">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-2xl font-extrabold">Total Price</p>
+                            <p class="text-2xl font-extrabold">BDT <span>0</span></p>
+                        </div>
+                        <div class="flex">
+                            <label class="input input-bordered flex items-center gap-2 w-3/4">
+                                <input type="text" class="grow" placeholder="Have any copupon? " />
+                            </label>
+                            <button class="btn w-1/4 bg-green-500 text-white font-bold">Apply</button>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-2xl font-extrabold">Grand Total</p>
+                            <p class="text-2xl font-extrabold">BDT <span>0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 px-8">
+                        <button class="btn w-full m-auto bg-green-600 font-extrabold text-3xl text-white ">Next</button>
+                    </div>
+
                 </div>
             </div>
 
@@ -223,6 +266,8 @@
 
     </footer>
 
+
+    <script src="js/function.js"></script>
 </body>
 
 </html>
